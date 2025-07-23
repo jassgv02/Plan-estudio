@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Interactiva</title>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f8f8f8; }
+    .mermaid { background: #fff; padding: 20px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular - Ejemplo</h1>
+  <div class="mermaid">
+    graph TD
+      M1[Matemática I] --> M2[Matemática II]
+      P1[Programación I] --> P2[Programación II]
+      P2 --> E1[Estructuras de Datos]
+      M2 --> F1[Física I]
+      F1 --> F2[Física II]
+      style M1 fill:#cce,stroke:#333
+      style P1 fill:#ccf,stroke:#333
+      style E1 fill:#cfc,stroke:#333
+  </div>
+</body>
+</html>
